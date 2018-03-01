@@ -81,8 +81,8 @@
       <div class="col-sm-12 col-md-7 subscribe-form"> 
                
         <form method="post" action="php/subscribe.php" name="subscribeform" id="subscribeform">
-          <input type="text" name="email" placeholder="Enter your email address to get notified" id="subemail" />
-          <input type="submit" name="send" value="Notify me" id="subsubmit" class="btn2" />
+          <input type="text" name="email" placeholder="Enter your Batch Code for register " id="password" />
+          <input type="submit" name="send" value="Submit"  class="btn2" onclick="checkPassword()" />
         </form>
         
         <!-- subscribe message -->
@@ -121,6 +121,20 @@
 <!-- Footer section --> 
 
 <!-- JS files--> 
+
+ <script>
+      function checkPassword(){
+       if(document.getElementById('password').value == 'cseru'){
+        //alert('Correct Password!'); 
+          location.href = "https://goo.gl/wCi65a";
+         } else {
+         alert('Batch Code is Incorrect!');
+          return false;
+        }
+       }
+      </script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.backstretch.min.js"></script> 
